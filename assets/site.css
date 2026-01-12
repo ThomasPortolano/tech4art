@@ -155,6 +155,25 @@ header[role="banner"] {
   padding-bottom: var(--space-4);
 }
 
+header[role="banner"] nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+header[role="banner"] nav > ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header[role="banner"] nav > ul.nav-actions {
+  justify-content: flex-end;
+}
+
 .skip-link {
   position: absolute;
   left: var(--space-4);
@@ -171,6 +190,11 @@ header[role="banner"] {
   gap: var(--space-3);
   align-items: center;
   flex-wrap: wrap;
+}
+
+.nav-actions > li {
+  display: flex;
+  align-items: center;
 }
 
 .brand strong {
