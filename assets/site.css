@@ -1,0 +1,373 @@
+:root {
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --pico-font-family: Graphik, "Libre Franklin", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: "Libre Caslon Display";
+  src: url("/assets/LibreCaslonDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Caslon Text";
+  src: url("/assets/LibreCaslonText-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Caslon Text";
+  src: url("/assets/LibreCaslonText-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Caslon Text";
+  src: url("/assets/LibreCaslonText-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("/assets/LibreFranklin-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("/assets/LibreFranklin-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url("/assets/Graphik-Medium-Trial.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url("/assets/Graphik-Bold-Trial.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Linden Hill";
+  src: url("/assets/LindenHill-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Linden Hill";
+  src: url("/assets/LindenHill-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --pico-background-color: #FFFFFF;
+  --pico-color: #1C1C1E;
+  --pico-muted-color: #636366;
+  --pico-muted-border-color: #E5E5EA;
+  --pico-card-background-color: #F2F0EC;
+
+  --pico-primary: #087E8B;
+  --pico-primary-background: #087E8B;
+  --pico-primary-underline: rgba(8, 126, 139, 0.5);
+  --pico-primary-hover: #06636D;
+  --pico-primary-hover-background: #06636D;
+  --pico-primary-focus: rgba(8, 126, 139, 0.35);
+  --pico-primary-inverse: #FFFFFF;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --pico-background-color: #000000;
+    --pico-color: #FFFFFF;
+    --pico-muted-color: #D1D1D6;
+    --pico-muted-border-color: #3A3A3C;
+    --pico-card-background-color: #1C1C1E;
+
+    --pico-primary: #67E8F9;
+    --pico-primary-background: #67E8F9;
+    --pico-primary-underline: rgba(103, 232, 249, 0.5);
+    --pico-primary-hover: #A5F3FC;
+    --pico-primary-hover-background: #A5F3FC;
+    --pico-primary-focus: rgba(103, 232, 249, 0.4);
+    --pico-primary-inverse: #0B0B0C;
+  }
+}
+
+[data-theme="dark"] {
+  --pico-background-color: #000000;
+  --pico-color: #FFFFFF;
+  --pico-muted-color: #D1D1D6;
+  --pico-muted-border-color: #3A3A3C;
+  --pico-card-background-color: #1C1C1E;
+
+  --pico-primary: #67E8F9;
+  --pico-primary-background: #67E8F9;
+  --pico-primary-underline: rgba(103, 232, 249, 0.5);
+  --pico-primary-hover: #A5F3FC;
+  --pico-primary-hover-background: #A5F3FC;
+  --pico-primary-focus: rgba(103, 232, 249, 0.4);
+  --pico-primary-inverse: #0B0B0C;
+}
+
+header[role="banner"] {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--pico-background-color);
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-4);
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--space-4);
+  top: var(--space-2);
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.nav-actions {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand strong {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.brand-mark {
+  display: block;
+  border-radius: 999px;
+  width: var(--space-8);
+  height: var(--space-8);
+}
+
+main[role="main"] {
+  padding-top: var(--space-3);
+}
+
+h1,
+h2 {
+  font-family: "Libre Caslon Text", ui-serif, Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-top: 0;
+  margin-bottom: var(--space-6);
+}
+
+h2 {
+  font-size: 2.125rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-4);
+}
+
+h3 {
+  font-family: "Libre Caslon Text", ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 1.35;
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-2);
+}
+
+main[role="main"] p,
+main[role="main"] li,
+main[role="main"] details > p {
+  font-family: "Libre Caslon Text", ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+main[role="main"] p {
+  margin-bottom: var(--space-4);
+}
+
+main[role="main"] section {
+  margin-bottom: var(--space-16);
+}
+
+nav,
+summary {
+  font-family: Graphik, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+button,
+[type="button"],
+[type="submit"],
+[role="button"] {
+  font-family: Graphik, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  padding: var(--space-3) var(--space-5);
+}
+
+.hero {
+  background: var(--pico-card-background-color);
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: var(--space-3);
+  padding: var(--space-8) var(--space-6);
+}
+
+.hero > p {
+  max-width: 65ch;
+}
+
+.cta-row {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-top: var(--space-4);
+}
+
+.hero .cta-row [role="button"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(var(--space-8) + var(--space-6));
+  padding: 0 var(--space-5);
+  line-height: 1.1;
+}
+
+.with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.cta-icon {
+  flex: 0 0 auto;
+  width: var(--space-8);
+  height: var(--space-8);
+}
+
+.meta-links {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.section {
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-5);
+}
+
+.section > p {
+  max-width: 65ch;
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  align-items: start;
+  margin-top: var(--space-4);
+}
+
+.screenshot {
+  margin: 0;
+}
+
+.screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--space-3);
+  border: 1px solid var(--pico-muted-border-color);
+}
+
+.screenshot figcaption {
+  margin-top: var(--space-2);
+  font-size: 0.9rem;
+  color: var(--pico-muted-color);
+}
+
+@media (max-width: 480px) {
+  .screenshot-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .hero {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    margin-bottom: var(--space-4);
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+    margin-top: var(--space-10);
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  main[role="main"] p,
+  main[role="main"] li,
+  main[role="main"] details > p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+.credits {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}

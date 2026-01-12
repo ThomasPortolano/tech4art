@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Audioguide du Louvre sur Android — Odyssée</title>
+    <meta
+      name="description"
+      content="Un audioguide Android narratif pour visiter le Louvre à votre rythme, avec des liens entre les œuvres."
+    />
+    <link rel="canonical" href="https://tech4art.info/fr/audioguide-louvre/" />
+    <link rel="alternate" hreflang="en" href="https://tech4art.info/en/louvre-audioguide/" />
+    <link rel="alternate" hreflang="fr" href="https://tech4art.info/fr/audioguide-louvre/" />
+    <link rel="alternate" hreflang="x-default" href="https://tech4art.info/en/louvre-audioguide/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Audioguide du Louvre sur Android — Odyssée" />
+    <meta property="og:description" content="Visitez le Louvre à votre rythme avec un audioguide Android narratif, centré sur les liens entre les œuvres." />
+    <meta property="og:url" content="https://tech4art.info/fr/audioguide-louvre/" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NE3XWY5009"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-NE3XWY5009', { content_language: 'fr' });
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Odyssée — Audioguide du Louvre",
+            "operatingSystem": "Android",
+            "applicationCategory": "TravelApplication",
+            "applicationSubCategory": "Museum Audio Guide",
+            "description": "Odyssée est un audioguide narratif pour visiter le musée du Louvre. Conçue comme un récit, l’application relie les œuvres entre elles à travers des séquences audio courtes. Les parcours fonctionnent hors ligne une fois téléchargés et restent accessibles après la visite.",
+            "image": "https://tech4art.info/assets/images/social/OG_Image%20%5BFR%5D.png",
+            "inLanguage": "fr",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "EUR",
+                "description": "Une piste d’introduction gratuite est disponible. Les parcours complets sont accessibles en version premium."
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Odyssée",
+                "url": "https://tech4art.info"
+            },
+            "downloadUrl": "https://play.google.com/store/apps/details?id=com.anonymous.theartcompanion",
+            "installUrl": "https://play.google.com/store/apps/details?id=com.anonymous.theartcompanion",
+            "isAccessibleForFree": true
+        }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Est-ce le site officiel du Louvre ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non. Odyssée est une application indépendante, conçue pour accompagner la visite du Louvre à travers des parcours audio narratifs. Elle n’est ni affiliée ni administrée par le musée du Louvre."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Est-ce que ça remplace le site ou l’audioguide officiel du Louvre ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non. Odyssée propose une approche complémentaire, centrée sur le récit, la mise en relation des œuvres et l’expérience de visite. Le site et l’audioguide officiels du Louvre fournissent des informations institutionnelles et documentaires."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Est-ce que ça fonctionne hors ligne au musée ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. Une fois les parcours téléchargés dans l’application, l’écoute fonctionne entièrement hors connexion. Vous pouvez ainsi suivre la visite dans le musée sans dépendre du réseau."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Y a-t-il du contenu gratuit ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. Une piste d’introduction gratuite permet de découvrir l’approche et le ton d’Odyssée. Les parcours complets sont ensuite accessibles en version premium."
+            }
+          }
+        ]
+      }
+    </script>
+
+
+    <link rel="icon" href="/assets/images/icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/assets/images/icon.png" />
+
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/assets/site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="container" role="banner">
+      <nav>
+        <ul>
+          <li class="brand">
+            <strong>
+              <img src="/assets/images/icon.png" alt="" width="32" height="32" class="brand-mark" />
+              <span>Odyssée</span>
+            </strong>
+          </li>
+        </ul>
+        <ul class="nav-actions">
+          <li><a href="/en/louvre-audioguide/" hreflang="en" lang="en">English</a></li>
+          <li>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.anonymous.theartcompanion"
+              role="button"
+              class="secondary"
+              data-play-store-link="true"
+              rel="noopener"
+            >
+              Google Play
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container" role="main" id="contenu">
+      <section class="hero">
+        <h1>Audioguide du Louvre sur Android</h1>
+        <p>
+          Le Louvre est immense. Odyssée propose une visite audio construite comme un récit : les œuvres dialoguent entre elles pour donner du sens à l’ensemble du parcours.
+        </p>
+        <div class="cta-row">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.anonymous.theartcompanion"
+            role="button"
+            class="with-icon"
+            data-play-store-link="true"
+            rel="noopener"
+          >
+            <svg
+              class="cta-icon"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M12 3v10" />
+              <path d="M7 11l5 5 5-5" />
+              <path d="M5 21h14" />
+            </svg>
+            Installer sur Google Play
+          </a>
+          <a href="#comment-ca-marche" role="button" class="secondary">Comment fonctionne l’application ?</a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="probleme">
+        <h2 id="probleme">Pourquoi la visite du Louvre est difficile</h2>
+        <h3>Trop de salles et trop d’œuvres pour une seule visite</h3>
+        <p>Même avec plusieurs heures sur place, il est impossible de tout voir sans fil conducteur.</p>
+
+        <h3>Un manque de contexte pour comprendre ce que l’on regarde</h3>
+        <p>Les œuvres sont extraordinaires, mais sans récit, leur sens se perd rapidement.</p>
+
+        <h3>Des audioguides classiques souvent conçus comme des listes à cocher</h3>
+        <p>Une œuvre après l’autre, sans lien clair, ni vision d’ensemble.</p>
+      </section>
+
+      <section class="section" id="comment-ca-marche" aria-labelledby="comment">
+        <h2 id="comment">Comment fonctionne Odyssée</h2>
+        <p>Odyssée a été conçu pour s’adapter aux conditions réelles de visite du Louvre.</p>
+
+        <h3>Choisir un point de départ ou un thème</h3>
+        <p>Une œuvre emblématique, une civilisation, ou un parcours pensé pour une partie du musée.</p>
+
+        <h3>Écouter des séquences courtes et narratives</h3>
+        <p>Des récits conçus pour être écoutés dans le musée, sans interrompre la visite.</p>
+
+        <h3>Suivre les liens entre les œuvres</h3>
+        <p>Chaque séquence vous conduit naturellement vers d’autres œuvres, proches dans l’espace ou dans l’histoire.</p>
+
+        <h3>Fonctionner sans réseau, une fois sur place</h3>
+        <p>Les contenus sont disponibles hors ligne, pour écouter librement, même sans connexion dans les salles.</p>
+
+        <h3>Continuer après la visite, à votre rythme</h3>
+        <p>Les parcours restent accessibles. Vous pouvez réécouter, explorer et parcourir les histoires depuis chez vous, longtemps après la visite.</p>
+      </section>
+
+      <section class="section app-preview" aria-labelledby="apercu">
+        <h2 id="apercu">Aperçu de l’application</h2>
+        <p>Notre expérience résumée en 6 écrans.</p>
+        <div class="screenshot-grid">
+          <figure class="screenshot">
+            <img
+              src="/assets/images/screenshots/tourDetails-fr.jpg"
+              alt="Écran de présentation d’un tour avec contexte et description"
+              width="1080"
+              height="2133"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Présentation du tour : contexte et contenu.</figcaption>
+          </figure>
+          <figure class="screenshot">
+            <img
+              src="/assets/images/screenshots/trackDetails-fr.jpg"
+              alt="Lecteur audio plein écran affichant une œuvre"
+              width="1080"
+              height="2133"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Le player plein écran, centré sur l’œuvre.</figcaption>
+          </figure>
+          <figure class="screenshot">
+            <img
+              src="/assets/images/screenshots/trackList-fr.jpg"
+              alt="Liste des pistes d’un tour pour accéder rapidement aux écoutes"
+              width="1080"
+              height="2133"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Tracklist : accès rapide aux pistes du tour.</figcaption>
+          </figure>
+          <figure class="screenshot">
+            <img
+              src="/assets/images/screenshots/transitions-fr.jpg"
+              alt="Piste de transition qui relie deux œuvres dans un même récit"
+              width="1080"
+              height="2133"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Transitions : les œuvres sont reliées entre elles.</figcaption>
+          </figure>
+          <figure class="screenshot">
+            <img
+              src="/assets/images/screenshots/navigation-fr.jpg"
+              alt="Indications de navigation pour suivre un parcours physique cohérent"
+              width="1080"
+              height="2133"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Navigation : des indications pour avancer dans le musée.</figcaption>
+          </figure>
+          <figure class="screenshot">
+            <img
+              src="/assets/images/screenshots/offline-fr.jpg"
+              alt="Réglages permettant de gérer les contenus hors ligne"
+              width="1080"
+              height="2133"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Hors ligne : télécharger les contenus avant la visite.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="tours">
+        <h2 id="tours">Trois audio tours conçus comme des récits</h2>
+        <p>Odyssée propose aujourd’hui trois parcours au Louvre.</p>
+        <p>
+          Chacun est pensé comme une expérience continue, où les œuvres dialoguent d’un chapitre à l’autre, pour construire
+          un récit cohérent au fil de la visite.
+        </p>
+
+        <h3>Chefs-d’œuvre de l’Égypte ancienne</h3>
+        <p>
+          Ce parcours traverse plus de trois millénaires de civilisation égyptienne à travers statues, reliefs et objets
+          rituels. Autour de figures emblématiques comme Le Scribe accroupi, le récit s’élargit à des œuvres moins connues
+          — le Relief de Séthi Ier et Hathor ou la statue de Sésostris III — pour éclairer les liens entre pouvoir,
+          religion et représentation du corps, et comprendre comment les Égyptiens pensaient le temps, la mort et
+          l’éternité.
+        </p>
+
+        <h3>Les trésors de l’aile Denon</h3>
+        <p>
+          Ce parcours explore l’aile Denon comme une succession de grands récits visuels. Autour de chefs-d’œuvre
+          emblématiques comme La Victoire de Samothrace, il invite à relire des œuvres plus complexes — Le Radeau de la
+          Méduse, des reliefs antiques — pour comprendre comment les artistes mettent en scène le drame, la gloire et le
+          pouvoir.
+        </p>
+
+        <h3>Rencontre avec les maîtres italiens de la Renaissance</h3>
+        <p>
+          De Léonard à Raphaël, ce parcours explore la Renaissance italienne comme un moment de bascule. Aux côtés de
+          chefs-d’œuvre universellement connus comme La Joconde, il invite à s’arrêter devant des œuvres moins célèbres —
+          La Belle Jardinière, La Vierge et l’Enfant avec sainte Anne — pour comprendre comment les artistes
+          expérimentent, hésitent et transforment leur manière de voir le monde.
+        </p>
+      </section>
+
+      <section class="section" aria-labelledby="gratuit-premium">
+        <h2 id="gratuit-premium">Découvrir gratuitement, approfondir à son rythme</h2>
+        <p>
+          Odyssée propose une première piste gratuite, pour entrer dans le récit et comprendre la démarche. Les parcours
+          complets sont ensuite accessibles en version premium, afin de suivre l’histoire dans son ensemble, sans
+          interruption.
+        </p>
+      </section>
+
+      <section class="section" aria-labelledby="faq">
+        <h2 id="faq">FAQ</h2>
+        <details>
+          <summary>Est-ce le site officiel du Louvre ?</summary>
+          <p>
+            Non. Odyssée est une application indépendante, conçue pour accompagner la visite du Louvre à travers des
+            parcours audio narratifs. Elle n’est ni affiliée ni administrée par le musée du Louvre.
+          </p>
+        </details>
+        <details>
+          <summary>Est-ce que ça remplace le site ou l’audioguide officiel du Louvre ?</summary>
+          <p>
+            Non. Odyssée propose une approche complémentaire, centrée sur le récit, la mise en relation des œuvres et
+            l’expérience de visite. Le site et l’audioguide officiels du Louvre fournissent des informations
+            institutionnelles et documentaires.
+          </p>
+        </details>
+        <details>
+          <summary>Est-ce que ça fonctionne hors ligne au musée ?</summary>
+          <p>
+            Oui. Une fois les parcours téléchargés dans l’application, l’écoute fonctionne entièrement hors connexion.
+            Vous pouvez ainsi suivre la visite dans le musée sans dépendre du réseau.
+          </p>
+        </details>
+        <details>
+          <summary>Y a-t-il du contenu gratuit ?</summary>
+          <p>
+            Oui. Une piste d’introduction gratuite permet de découvrir l’approche et le ton d’Odyssée. Les parcours
+            complets sont ensuite accessibles en version premium.
+          </p>
+        </details>
+      </section>
+
+      <section class="section" aria-labelledby="commencer-la-visite">
+        <h2 id="commencer-la-visite">Commencer la visite</h2>
+        <p>Installez Odyssée et explorez le Louvre à travers des récits conçus pour le musée.</p>
+        <div class="cta-row">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.anonymous.theartcompanion"
+            role="button"
+            data-play-store-link="true"
+            rel="noopener"
+          >
+            Installer sur Google Play
+          </a>
+        </div>
+      </section>
+
+      <footer class="section" role="contentinfo">
+        <div class="meta-links">
+          <a href="https://theartcompanion-fecc6.web.app/privacy-policy.html" target="_blank" rel="noopener">
+            Privacy policy
+          </a>
+          <a href="mailto:thomas@tech4art.info">Contact</a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="/assets/site.js" defer></script>
+  </body>
+</html>
