@@ -9,7 +9,7 @@ The website is designed for SEO performance, targeting high-intent visitors plan
 - **HTML5**: Semantic and accessible markup.
 - **CSS**: Built with [Pico.css](https://picocss.com/) (v2) for a lightweight, responsive, and semantic design.
 - **JavaScript**: Minimal vanilla JS for progressive enhancement (no frameworks).
-- **Hosting**: Vercel.
+- **Hosting**: Github.
 
 ## 📂 Project Structure
 
