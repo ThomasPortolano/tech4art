@@ -1,0 +1,14 @@
+{
+  "name": "tech4art-landing",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./assets/tailwind.css -o ./assets/site.css",
+    "watch": "npx @tailwindcss/cli -i ./assets/tailwind.css -o ./assets/site.css --watch",
+    "start": "npx -y serve@latest .",
+    "dev": "npm run watch & npm run start"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  }
+}

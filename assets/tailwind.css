@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+  
+  --color-paper: #f5f2ed;
+  --color-ink: #1a1a1a;
+  --color-gold: #c5a059;
+
+  /* From Colors.ts — tintColorLight (primary action) & tintColorDark (bright accent) */
+  --color-teal: #087E8B;
+  --color-teal-bright: #67E8F9;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+/* ── Primary CTA — uses both app teal values from Colors.ts ─────────────── */
+.cta-primary {
+  position: relative;
+  overflow: hidden;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--color-teal) 0%, #1c7c94 100%);
+  box-shadow:
+    0 4px 20px rgba(8, 126, 139, 0.40),
+    0 1px 4px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background 0.3s ease;
+}
+
+/* Bright cyan shimmer line from Colors.ts tintColorDark (#67E8F9) */
+.cta-primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(103, 232, 249, 0.70) 50%,
+    transparent 100%
+  );
+}
+
+.cta-primary:hover {
+  box-shadow:
+    0 8px 32px rgba(8, 126, 139, 0.55),
+    0 2px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #096f7a 0%, var(--color-teal) 100%);
+}
+
+/* ── Nav CTA — outlined, upgraded border colour ─────────────────────────── */
+.cta-nav {
+  border: 1.5px solid var(--color-teal);
+  color: var(--color-teal);
+  background: rgba(8, 126, 139, 0.05);
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-nav:hover {
+  background: var(--color-teal);
+  color: var(--color-paper);
+  box-shadow: 0 2px 12px rgba(8, 126, 139, 0.35);
+}
+
+/* ── Custom Marquee & Tag Styles ─────────────────────────── */
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 60s linear infinite;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee-reverse 50s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.tour-tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-right: 1.25rem;
+  border: 1px solid var(--color-gold);
+  border-radius: 9999px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ink);
+  background: rgba(197, 160, 89, 0.05); /* gold with opacity */
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.tour-tag:hover {
+  background: var(--color-gold);
+  color: var(--color-paper);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(197, 160, 89, 0.2);
+}

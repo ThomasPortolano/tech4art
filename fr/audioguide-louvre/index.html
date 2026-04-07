@@ -1,35 +1,35 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light dark" />
-    <title>Audioguide du Louvre sur Android — Odyssée</title>
-    <meta
-      name="description"
-      content="Un audioguide Android narratif pour visiter le Louvre à votre rythme, avec des liens entre les œuvres."
-    />
-    <link rel="canonical" href="https://tech4art.info/fr/audioguide-louvre/" />
-    <link rel="alternate" hreflang="en" href="https://tech4art.info/en/louvre-audioguide/" />
-    <link rel="alternate" hreflang="fr" href="https://tech4art.info/fr/audioguide-louvre/" />
-    <link rel="alternate" hreflang="x-default" href="https://tech4art.info/en/louvre-audioguide/" />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Audioguide du Louvre sur Android — Odyssée" />
-    <meta property="og:description" content="Visitez le Louvre à votre rythme avec un audioguide Android narratif, centré sur les liens entre les œuvres." />
-    <meta property="og:url" content="https://tech4art.info/fr/audioguide-louvre/" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Audioguide du Louvre sur Android — Odyssée</title>
+  <meta name="description"
+    content="Un audioguide Android narratif pour visiter le Louvre à votre rythme, avec des liens entre les œuvres." />
+  <link rel="canonical" href="https://tech4art.info/fr/audioguide-louvre/" />
+  <link rel="alternate" hreflang="en" href="https://tech4art.info/en/louvre-audioguide/" />
+  <link rel="alternate" hreflang="fr" href="https://tech4art.info/fr/audioguide-louvre/" />
+  <link rel="alternate" hreflang="x-default" href="https://tech4art.info/en/louvre-audioguide/" />
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NE3XWY5009"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-NE3XWY5009', { content_language: 'fr' });
-    </script>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Audioguide du Louvre sur Android — Odyssée" />
+  <meta property="og:description"
+    content="Visitez le Louvre à votre rythme avec un audioguide Android narratif, centré sur les liens entre les œuvres." />
+  <meta property="og:url" content="https://tech4art.info/fr/audioguide-louvre/" />
 
-    <script type="application/ld+json">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NE3XWY5009"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-NE3XWY5009', { content_language: 'fr' });
+  </script>
+
+  <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
@@ -57,7 +57,7 @@
         }
     </script>
 
-    <script type="application/ld+json">
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -98,297 +98,423 @@
       }
     </script>
 
+  <link rel="icon" href="../../assets/images/icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="../../assets/images/icon.png" />
 
-    <link rel="icon" href="/assets/images/icon.png" type="image/png" />
-    <link rel="apple-touch-icon" href="/assets/images/icon.png" />
+  <link rel="stylesheet" href="../../assets/site.css" />
+</head>
 
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2/css/pico.min.css" />
-    <link rel="stylesheet" href="/assets/site.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#contenu">Aller au contenu</a>
-    <header class="container" role="banner">
-      <nav>
-        <ul>
-          <li class="brand">
-            <strong>
-              <img src="/assets/images/icon.png" alt="" width="32" height="32" class="brand-mark" />
-              <span>Odyssée</span>
-            </strong>
-          </li>
-        </ul>
-        <ul class="nav-actions">
-          <li><a href="/en/louvre-audioguide/" hreflang="en" lang="en">English</a></li>
-          <li>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.anonymous.theartcompanion&utm_source=tech4art&utm_medium=cta&utm_campaign=landing_fr"
-              role="button"
-              class="secondary"
-              data-play-store-link="true"
-              data-cta-location="header"
-              rel="noopener"
-            >
-              Google Play
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="mx-auto max-w-5xl px-6 py-8" role="banner">
+    <nav class="flex items-center justify-between border-b border-gold pb-4">
+      <div class="flex items-center gap-3">
+        <img src="../../assets/images/icon.png" alt="" width="32" height="32" class="rounded-full shadow-sm" />
+        <span class="font-serif text-xl font-semibold tracking-wide text-ink">Odyssée</span>
+      </div>
+      <ul class="flex items-center gap-6 font-sans text-sm font-medium uppercase tracking-widest text-ink/70">
+        <li><a href="/en/louvre-audioguide/" hreflang="en" lang="en"
+            class="hover:text-gold transition-colors">English</a></li>
+        <li>
+          <a href="https://play.google.com/store/apps/details?id=com.anonymous.theartcompanion"
+            class="cta-nav px-4 py-1.5 text-xs rounded-lg font-bold font-sans" data-play-store-link="true"
+            rel="noopener">
+            Installer l’app
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="mx-auto max-w-5xl px-6" id="contenu">
+    <section class="flex flex-col items-center py-20 text-center md:py-32">
+      <h1 class="mb-8 max-w-4xl font-serif text-5xl leading-tight font-medium md:text-7xl lg:text-8xl">
+        Audioguide du Louvre <span class="block italic text-gold">sur Android</span>
+      </h1>
+      <p class="mb-12 max-w-2xl font-sans text-lg leading-relaxed text-ink/80 md:text-xl">
+        Le Louvre est immense. Odyssée propose une visite audio construite comme un récit :
+        les œuvres dialoguent entre elles pour donner du sens à l’ensemble du parcours.
+      </p>
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+        <a href="https://play.google.com/store/apps/details?id=com.anonymous.theartcompanion"
+          class="cta-primary group inline-flex items-center gap-3 px-8 py-4 font-sans font-bold text-paper rounded-xl"
+          data-play-store-link="true" rel="noopener">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v10" />
+            <path d="M7 11l5 5 5-5" />
+            <path d="M5 21h14" />
+          </svg>
+          <span>Installer sur Google Play</span>
+        </a>
+        <a href="#comment-ca-marche"
+          class="px-8 py-4 font-sans font-semibold text-ink/70 hover:text-gold transition-colors">
+          Comment fonctionne l’application ?
+        </a>
+      </div>
+    </section>
+
+    <section class="border-t border-ink/10 py-24 sm:py-32" aria-labelledby="probleme">
+      <div class="mx-auto max-w-6xl px-6">
+        <h2 id="probleme"
+          class="mb-16 font-serif text-4xl font-medium tracking-tight md:text-5xl text-center leading-tight">
+          Pourquoi la visite du Louvre <br /><span class="italic text-gold">peut être un défi</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-24">
+          <div class="group flex flex-col gap-4">
+            <span class="block font-serif text-gold text-sm uppercase tracking-widest font-black">L'Échelle</span>
+            <h3 class="font-serif text-3xl font-medium leading-tight">Trop de salles et d'œuvres pour une seule visite
+            </h3>
+            <p class="font-sans text-lg text-ink/70 leading-relaxed">
+              Même avec plusieurs heures sur place, il est impossible de tout voir sans un fil conducteur narratif.
+            </p>
+          </div>
+
+          <div class="group flex flex-col gap-4">
+            <span class="block font-serif text-gold text-sm uppercase tracking-widest font-black">Le Contexte</span>
+            <h3 class="font-serif text-3xl font-medium leading-tight">Un manque de clés pour comprendre ce que l'on
+              regarde</h3>
+            <p class="font-sans text-lg text-ink/70 leading-relaxed">
+              Les œuvres sont extraordinaires, mais sans récit, leur sens peut rapidement s'estomper face à la
+              profusion.
+            </p>
+          </div>
+
+          <div class="group flex flex-col gap-4">
+            <span class="block font-serif text-gold text-sm uppercase tracking-widest font-black">La Fatigue</span>
+            <h3 class="font-serif text-3xl font-medium leading-tight">La tentation de tout voir, au risque de s'épuiser
+            </h3>
+            <p class="font-sans text-lg text-ink/70 leading-relaxed">
+              On ressort souvent du musée impressionné mais épuisé, avec une sensation de survol plutôt qu'une
+              rencontre.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-ink py-24 text-paper sm:py-32 rounded-3xl overflow-hidden relative" id="comment-ca-marche"
+      aria-labelledby="comment">
+      <div
+        class="absolute inset-0 opacity-10 pointer-events-none select-none overflow-hidden flex items-center justify-center">
+        <img src="../../assets/images/icon.png" alt=""
+          class="w-[30rem] h-[30rem] object-contain opacity-20 filter brightness-0 invert" />
+      </div>
+
+      <div class="relative z-10 mx-auto max-w-4xl px-6">
+        <h2 id="comment" class="mb-6 font-serif text-4xl font-medium md:text-5xl text-center">
+          Comment fonctionne Odyssée
+        </h2>
+        <p class="mb-16 font-sans text-center text-paper/80 max-w-2xl mx-auto">
+          Odyssée a été conçu pour s’adapter aux conditions réelles de visite du Louvre.
+        </p>
+
+        <div class="grid gap-12 md:grid-cols-2">
+          <div>
+            <h3 class="mb-2 font-serif text-2xl text-gold">Choisir un point de départ</h3>
+            <p class="font-sans text-paper/70">Une œuvre emblématique, une civilisation, ou un parcours pensé pour une
+              partie du musée.</p>
+          </div>
+          <div>
+            <h3 class="mb-2 font-serif text-2xl text-gold">Écouter des récits</h3>
+            <p class="font-sans text-paper/70">Des histoires conçues pour être écoutées dans le musée, sans interrompre
+              la visite.</p>
+          </div>
+          <div>
+            <h3 class="mb-2 font-serif text-2xl text-gold">Suivre les liens</h3>
+            <p class="font-sans text-paper/70">Chaque séquence vous conduit naturellement vers d’autres œuvres, proches
+              dans l’espace ou dans l’histoire.</p>
+          </div>
+          <div>
+            <h3 class="mb-2 font-serif text-2xl text-gold">Fonctionne sans réseau</h3>
+            <p class="font-sans text-paper/70">Les contenus sont disponibles hors ligne pour écouter librement même sans
+              connexion dans les salles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 sm:py-32" aria-labelledby="apercu">
+      <div class="text-center mb-16">
+        <h2 id="apercu" class="mb-4 font-serif text-4xl font-medium md:text-5xl">Une immersion inédite au cœur du Louvre
+        </h2>
+        <p class="font-sans text-ink/70">L’expérience de visite, résumée en 6 étapes clés.</p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-12 md:grid-cols-3 lg:gap-16">
+        <figure class="group">
+          <div
+            class="rounded-2xl shadow-2xl overflow-hidden bg-ink/5 aspect-[9/19.5] transition-transform duration-500 group-hover:scale-[1.02]">
+            <img src="../../assets/images/screenshots/tourList-fr.jpg" alt="Réglages hors ligne"
+              class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <figcaption class="mt-8 text-center font-serif">
+            <span class="block text-lg font-medium text-ink mb-1">Des parcours sur mesure</span>
+            <span class="block italic text-sm text-ink/60">Choisissez votre itinéraire selon la durée souhaitée ou
+              l'aile du musée que vous voulez explorer.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="group">
+          <div
+            class="rounded-2xl shadow-2xl overflow-hidden bg-ink/5 aspect-[9/19.5] transition-transform duration-500 group-hover:scale-[1.02]">
+            <img src="/assets/images/screenshots/tourDetails-fr.jpg" alt="Tour List" class="w-full h-full object-cover"
+              loading="lazy" />
+          </div>
+          <figcaption class="mt-8 text-center font-serif">
+            <span class="block text-lg font-medium text-ink mb-1">Le contexte avant tout</span>
+            <span class="block italic text-[15px] leading-relaxed text-ink/70">Chaque introduction présente les
+              thématiques et les chefs-d'œuvre incontournables de votre visite.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="group">
+          <div
+            class="rounded-2xl shadow-2xl overflow-hidden bg-ink/5 aspect-[9/19.5] transition-transform duration-500 group-hover:scale-[1.02]">
+            <img src="../../assets/images/screenshots/trackDetails-fr.jpg" alt="Lecteur plein écran"
+              class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <figcaption class="mt-8 text-center font-serif">
+            <span class="block text-lg font-medium text-ink mb-1">Un lecteur visuel et épuré</span>
+            <span class="block italic text-sm text-ink/60">Une interface translucide pensée pour s'effacer et laisser
+              toute la place à la contemplation de l'œuvre.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="group">
+          <div
+            class="rounded-2xl shadow-2xl overflow-hidden bg-ink/5 aspect-[9/19.5] transition-transform duration-500 group-hover:scale-[1.02]">
+            <img src="../../assets/images/screenshots/trackList-fr.jpg" alt="Liste des pistes"
+              class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <figcaption class="mt-8 text-center font-serif">
+            <span class="block text-lg font-medium text-ink mb-1">Itinéraire optimisé</span>
+            <span class="block italic text-sm text-ink/60">Suivez le sens naturel de la visite. Nos listes de lecture
+              respectent l'agencement physique des galeries et la progression thématique de votre visite.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="group">
+          <div
+            class="rounded-2xl shadow-2xl overflow-hidden bg-ink/5 aspect-[9/19.5] transition-transform duration-500 group-hover:scale-[1.02]">
+            <img src="../../assets/images/screenshots/navigation-fr.jpg" alt="Aide à la navigation"
+              class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <figcaption class="mt-8 text-center font-serif">
+            <span class="block text-lg font-medium text-ink mb-1">Des repères clairs</span>
+            <span class="block italic text-sm text-ink/60">Des indications précises vous aident à vous orienter dès que
+              cela est nécessaire.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="group">
+          <div
+            class="rounded-2xl shadow-2xl overflow-hidden bg-ink/5 aspect-[9/19.5] transition-transform duration-500 group-hover:scale-[1.02]">
+            <img src="../../assets/images/screenshots/offline-fr.jpg" alt="Réglages hors ligne"
+              class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <figcaption class="mt-8 text-center font-serif">
+            <span class="block text-lg font-medium text-ink mb-1">Mode hors-ligne</span>
+            <span class="block italic text-sm text-ink/60">Téléchargez votre parcours à l'avance pour profiter de
+              l'audio même derrière les murs épais du palais.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="py-24 sm:py-32" aria-labelledby="tours">
+      <div class="text-center mb-16 px-6">
+        <h2 id="tours" class="mb-6 font-serif text-4xl font-medium md:text-6xl">
+          Une collection <br /><span class="italic text-gold">de récits qui grandit</span>
+        </h2>
+        <p class="mx-auto max-w-2xl font-sans text-ink/70 text-lg leading-relaxed">
+          Odyssée propose désormais plus de 9 parcours au Louvre. Des civilisations anciennes aux maîtres de la
+          Renaissance, notre collection s'enrichit régulièrement pour offrir de nouveaux regards sur le monde.
+        </p>
+      </div>
+
+      <div class="space-y-12">
+        <!-- Row 1: Moving Right -->
+        <div class="marquee-container">
+          <div class="animate-marquee py-4">
+            <span class="tour-tag">Égypte ancienne</span>
+            <span class="tour-tag">Renaissance italienne</span>
+            <span class="tour-tag">Antiquités grecques</span>
+            <span class="tour-tag">Peintures françaises</span>
+            <span class="tour-tag">Chefs-d'œuvre de la sculpture</span>
+            <span class="tour-tag">Arts de l'Islam</span>
+            <span class="tour-tag">Antiquités orientales</span>
+            <span class="tour-tag">Incontournables de l'aile Denon</span>
+            <span class="tour-tag">L'aile Sully</span>
+            <!-- Duplicate for infinite scroll -->
+            <span class="tour-tag">Égypte ancienne</span>
+            <span class="tour-tag">Renaissance italienne</span>
+            <span class="tour-tag">Antiquités grecques</span>
+            <span class="tour-tag">Peintures françaises</span>
+            <span class="tour-tag">Chefs-d'œuvre de la sculpture</span>
+            <span class="tour-tag">Arts de l'Islam</span>
+            <span class="tour-tag">Antiquités orientales</span>
+            <span class="tour-tag">Incontournables de l'aile Denon</span>
+            <span class="tour-tag">L'aile Sully</span>
+          </div>
+        </div>
+
+        <!-- Row 2: Moving Left -->
+        <div class="mb-12 marquee-container">
+          <div class="animate-marquee-reverse py-4">
+            <span class="tour-tag">L'aile Richelieu</span>
+            <span class="tour-tag">Le Code de Hammurabi</span>
+            <span class="tour-tag">Vénus de Milo</span>
+            <span class="tour-tag">La Joconde et au-delà</span>
+            <span class="tour-tag">Appartements Napoléon III</span>
+            <span class="tour-tag">Le Louvre médiéval</span>
+            <span class="tour-tag">Peintures flamandes</span>
+            <span class="tour-tag">Maîtres espagnols</span>
+            <span class="tour-tag">Art étrusque</span>
+            <!-- Duplicate for infinite scroll -->
+            <span class="tour-tag">L'aile Richelieu</span>
+            <span class="tour-tag">Le Code de Hammurabi</span>
+            <span class="tour-tag">Vénus de Milo</span>
+            <span class="tour-tag">La Joconde et au-delà</span>
+            <span class="tour-tag">Appartements Napoléon III</span>
+            <span class="tour-tag">Le Louvre médiéval</span>
+            <span class="tour-tag">Peintures flamandes</span>
+            <span class="tour-tag">Maîtres espagnols</span>
+            <span class="tour-tag">Art étrusque</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <a href="https://play.google.com/store/apps/details?id=com.anonymous.theartcompanion"
+          class="cta-primary group inline-flex items-center gap-3 px-8 py-4 font-sans font-bold text-paper rounded-xl"
+          data-play-store-link="true" rel="noopener">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v10" />
+            <path d="M7 11l5 5 5-5" />
+            <path d="M5 21h14" />
+          </svg>
+          <span>Découvrir tous les parcours</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="py-24 sm:py-32" aria-labelledby="membres-fondateurs">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="bg-[#1a1a1a]/5 py-16 px-8 md:px-16 rounded-3xl border border-[#1a1a1a]/10 relative overflow-hidden shadow-sm text-center">
+          <div class="absolute inset-0 bg-[#c5a059]/5 pointer-events-none"></div>
+          <div class="relative z-10">
+            <h2 id="membres-fondateurs" class="mb-6 font-serif text-4xl font-medium">Accès illimité pour nos premiers membres</h2>
+            <p class="mb-12 font-sans text-ink/70 text-lg leading-relaxed max-w-2xl mx-auto">
+              Pour célébrer le lancement, l'intégralité de nos parcours est gratuite pour les premiers utilisateurs.
+              Créez un compte aujourd'hui : vos parcours resteront gratuits à vie, même après le passage à la version premium.
+            </p>
+            <a href="https://play.google.com/store/apps/details?id=com.anonymous.theartcompanion"
+              class="cta-primary inline-flex items-center gap-3 px-8 py-4 font-sans font-bold text-paper rounded-xl"
+              data-play-store-link="true" rel="noopener">
+              <span>Créer mon compte gratuit</span>
             </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="container" role="main" id="contenu">
-      <section class="hero">
-        <h1>Audioguide du Louvre sur Android</h1>
-        <p>
-          Le Louvre est immense. Odyssée propose une visite audio construite comme un récit : les œuvres dialoguent entre elles pour donner du sens à l’ensemble du parcours.
-        </p>
-        <div class="cta-row">
-          <a
-            href="https://play.google.com/store/apps/details?id=com.anonymous.theartcompanion&utm_source=tech4art&utm_medium=cta&utm_campaign=landing_fr"
-            role="button"
-            class="with-icon"
-            data-play-store-link="true"
-            data-cta-location="hero"
-            rel="noopener"
-          >
-            <svg
-              class="cta-icon"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <path d="M12 3v10" />
-              <path d="M7 11l5 5 5-5" />
-              <path d="M5 21h14" />
-            </svg>
-            Installer sur Google Play
-          </a>
-          <a href="#comment-ca-marche" role="button" class="secondary">Comment fonctionne l’application ?</a>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <section class="py-24 sm:py-32" aria-labelledby="faq">
+      <h2 id="faq" class="mb-12 font-serif text-4xl font-medium text-center">Questions fréquentes</h2>
 
-      <section class="section" aria-labelledby="probleme">
-        <h2 id="probleme">Pourquoi la visite du Louvre est difficile</h2>
-        <h3>Trop de salles et trop d’œuvres pour une seule visite</h3>
-        <p>Même avec plusieurs heures sur place, il est impossible de tout voir sans fil conducteur.</p>
-
-        <h3>Un manque de contexte pour comprendre ce que l’on regarde</h3>
-        <p>Les œuvres sont extraordinaires, mais sans récit, leur sens se perd rapidement.</p>
-
-        <h3>Des audioguides classiques souvent conçus comme des listes à cocher</h3>
-        <p>Une œuvre après l’autre, sans lien clair, ni vision d’ensemble.</p>
-      </section>
-
-      <section class="section" id="comment-ca-marche" aria-labelledby="comment">
-        <h2 id="comment">Comment fonctionne Odyssée</h2>
-        <p>Odyssée a été conçu pour s’adapter aux conditions réelles de visite du Louvre.</p>
-
-        <h3>Choisir un point de départ ou un thème</h3>
-        <p>Une œuvre emblématique, une civilisation, ou un parcours pensé pour une partie du musée.</p>
-
-        <h3>Écouter des séquences courtes et narratives</h3>
-        <p>Des récits conçus pour être écoutés dans le musée, sans interrompre la visite.</p>
-
-        <h3>Suivre les liens entre les œuvres</h3>
-        <p>Chaque séquence vous conduit naturellement vers d’autres œuvres, proches dans l’espace ou dans l’histoire.</p>
-
-        <h3>Fonctionner sans réseau, une fois sur place</h3>
-        <p>Les contenus sont disponibles hors ligne, pour écouter librement, même sans connexion dans les salles.</p>
-
-        <h3>Continuer après la visite, à votre rythme</h3>
-        <p>Les parcours restent accessibles. Vous pouvez réécouter, explorer et parcourir les histoires depuis chez vous, longtemps après la visite.</p>
-      </section>
-
-      <section class="section app-preview" aria-labelledby="apercu">
-        <h2 id="apercu">Aperçu de l’application</h2>
-        <p>Notre expérience résumée en 6 écrans.</p>
-        <div class="screenshot-grid">
-          <figure class="screenshot">
-            <img
-              src="/assets/images/screenshots/tourDetails-fr.jpg"
-              alt="Écran de présentation d’un tour avec contexte et description"
-              width="1080"
-              height="2133"
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Présentation du tour : contexte et contenu.</figcaption>
-          </figure>
-          <figure class="screenshot">
-            <img
-              src="/assets/images/screenshots/trackDetails-fr.jpg"
-              alt="Lecteur audio plein écran affichant une œuvre"
-              width="1080"
-              height="2133"
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Le player plein écran, centré sur l’œuvre.</figcaption>
-          </figure>
-          <figure class="screenshot">
-            <img
-              src="/assets/images/screenshots/trackList-fr.jpg"
-              alt="Liste des pistes d’un tour pour accéder rapidement aux écoutes"
-              width="1080"
-              height="2133"
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Tracklist : accès rapide aux pistes du tour.</figcaption>
-          </figure>
-          <figure class="screenshot">
-            <img
-              src="/assets/images/screenshots/transitions-fr.jpg"
-              alt="Piste de transition qui relie deux œuvres dans un même récit"
-              width="1080"
-              height="2133"
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Transitions : les œuvres sont reliées entre elles.</figcaption>
-          </figure>
-          <figure class="screenshot">
-            <img
-              src="/assets/images/screenshots/navigation-fr.jpg"
-              alt="Indications de navigation pour suivre un parcours physique cohérent"
-              width="1080"
-              height="2133"
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Navigation : des indications pour avancer dans le musée.</figcaption>
-          </figure>
-          <figure class="screenshot">
-            <img
-              src="/assets/images/screenshots/offline-fr.jpg"
-              alt="Réglages permettant de gérer les contenus hors ligne"
-              width="1080"
-              height="2133"
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Hors ligne : télécharger les contenus avant la visite.</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="tours">
-        <h2 id="tours">Trois audio tours conçus comme des récits</h2>
-        <p>Odyssée propose aujourd’hui trois parcours au Louvre.</p>
-        <p>
-          Chacun est pensé comme une expérience continue, où les œuvres dialoguent d’un chapitre à l’autre, pour construire
-          un récit cohérent au fil de la visite.
-        </p>
-
-        <h3>Chefs-d’œuvre de l’Égypte ancienne</h3>
-        <p>
-          Ce parcours traverse plus de trois millénaires de civilisation égyptienne à travers statues, reliefs et objets
-          rituels. Autour de figures emblématiques comme Le Scribe accroupi, le récit s’élargit à des œuvres moins connues
-          — le Relief de Séthi Ier et Hathor ou la statue de Sésostris III — pour éclairer les liens entre pouvoir,
-          religion et représentation du corps, et comprendre comment les Égyptiens pensaient le temps, la mort et
-          l’éternité.
-        </p>
-
-        <h3>Les trésors de l’aile Denon</h3>
-        <p>
-          Ce parcours explore l’aile Denon comme une succession de grands récits visuels. Autour de chefs-d’œuvre
-          emblématiques comme La Victoire de Samothrace, il invite à relire des œuvres plus complexes — Le Radeau de la
-          Méduse, des reliefs antiques — pour comprendre comment les artistes mettent en scène le drame, la gloire et le
-          pouvoir.
-        </p>
-
-        <h3>Rencontre avec les maîtres italiens de la Renaissance</h3>
-        <p>
-          De Léonard à Raphaël, ce parcours explore la Renaissance italienne comme un moment de bascule. Aux côtés de
-          chefs-d’œuvre universellement connus comme La Joconde, il invite à s’arrêter devant des œuvres moins célèbres —
-          La Belle Jardinière, La Vierge et l’Enfant avec sainte Anne — pour comprendre comment les artistes
-          expérimentent, hésitent et transforment leur manière de voir le monde.
-        </p>
-      </section>
-
-      <section class="section" aria-labelledby="gratuit-premium">
-        <h2 id="gratuit-premium">Découvrir gratuitement, approfondir à son rythme</h2>
-        <p>
-          Odyssée propose une première piste gratuite, pour entrer dans le récit et comprendre la démarche. Les parcours
-          complets sont ensuite accessibles en version premium, afin de suivre l’histoire dans son ensemble, sans
-          interruption.
-        </p>
-      </section>
-
-      <section class="section" aria-labelledby="faq">
-        <h2 id="faq">FAQ</h2>
-        <details data-faq-item="true" data-faq-id="official_louvre">
-          <summary>Est-ce le site officiel du Louvre ?</summary>
-          <p>
-            Non. Odyssée est une application indépendante, conçue pour accompagner la visite du Louvre à travers des
-            parcours audio narratifs. Elle n’est ni affiliée ni administrée par le musée du Louvre.
+      <div class="mx-auto max-w-2xl space-y-4">
+        <details class="group border-b border-ink/10 pb-4 outline-none" data-faq-item="true"
+          data-faq-id="official_louvre">
+          <summary class="flex justify-between items-center font-serif text-xl cursor-pointer list-none outline-none">
+            Est-ce le site officiel du Louvre ?
+            <span class="text-gold transition-transform group-open:rotate-180">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </summary>
+          <p class="mt-4 font-sans text-ink/70 leading-relaxed">
+            Non. Odyssée est une application indépendante, conçue pour accompagner la visite du Louvre à travers
+            des parcours audio narratifs. Elle n’est ni affiliée ni administrée par le musée du Louvre.
           </p>
         </details>
-        <details data-faq-item="true" data-faq-id="replace_official">
-          <summary>Est-ce que ça remplace le site ou l’audioguide officiel du Louvre ?</summary>
-          <p>
-            Non. Odyssée propose une approche complémentaire, centrée sur le récit, la mise en relation des œuvres et
-            l’expérience de visite. Le site et l’audioguide officiels du Louvre fournissent des informations
-            institutionnelles et documentaires.
+
+        <details class="group border-b border-ink/10 pb-4 outline-none" data-faq-item="true"
+          data-faq-id="replace_official">
+          <summary class="flex justify-between items-center font-serif text-xl cursor-pointer list-none outline-none">
+            Est-ce que ça remplace l’audioguide officiel ?
+            <span class="text-gold transition-transform group-open:rotate-180">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </summary>
+          <p class="mt-4 font-sans text-ink/70 leading-relaxed">
+            Non. Odyssée propose une approche complémentaire, centrée sur le récit et la mise en relation des œuvres.
+            Le site et l’audioguide officiels fournissent des informations institutionnelles et documentaires.
           </p>
         </details>
-        <details data-faq-item="true" data-faq-id="offline">
-          <summary>Est-ce que ça fonctionne hors ligne au musée ?</summary>
-          <p>
-            Oui. Une fois les parcours téléchargés dans l’application, l’écoute fonctionne entièrement hors connexion.
-            Vous pouvez ainsi suivre la visite dans le musée sans dépendre du réseau.
+
+        <details class="group border-b border-ink/10 pb-4 outline-none" data-faq-item="true" data-faq-id="offline">
+          <summary class="flex justify-between items-center font-serif text-xl cursor-pointer list-none outline-none">
+            Est-ce que ça fonctionne hors ligne au musée ?
+            <span class="text-gold transition-transform group-open:rotate-180">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </summary>
+          <p class="mt-4 font-sans text-ink/70 leading-relaxed">
+            Oui. Une fois les parcours téléchargés, l’écoute fonctionne entièrement hors connexion, vous permettant
+            de suivre la visite sans dépendre du réseau.
           </p>
         </details>
-        <details data-faq-item="true" data-faq-id="free_content">
-          <summary>Y a-t-il du contenu gratuit ?</summary>
-          <p>
-            Oui. Une piste d’introduction gratuite permet de découvrir l’approche et le ton d’Odyssée. Les parcours
-            complets sont ensuite accessibles en version premium.
+
+        <details class="group border-b border-ink/10 pb-4 outline-none" data-faq-item="true" data-faq-id="free_content">
+          <summary class="flex justify-between items-center font-serif text-xl cursor-pointer list-none outline-none">
+            Y a-t-il du contenu gratuit ?
+            <span class="text-gold transition-transform group-open:rotate-180">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </summary>
+          <p class="mt-4 font-sans text-ink/70 leading-relaxed">
+            Oui. Actuellement, tous nos parcours sont gratuits pour nos premiers utilisateurs. En créant un compte dès
+            maintenant, vous bénéficiez d'un accès gratuit à vie à tous les parcours existants, même lors du passage au
+            modèle premium.
           </p>
         </details>
-      </section>
+      </div>
+    </section>
 
-      <section class="section" aria-labelledby="commencer-la-visite">
-        <h2 id="commencer-la-visite">Commencer la visite</h2>
-        <p>Installez Odyssée et explorez le Louvre à travers des récits conçus pour le musée.</p>
-        <div class="cta-row">
-          <a
-            href="https://play.google.com/store/apps/details?id=com.anonymous.theartcompanion&utm_source=tech4art&utm_medium=cta&utm_campaign=landing_fr"
-            role="button"
-            data-play-store-link="true"
-            data-cta-location="closing"
-            rel="noopener"
-          >
-            Installer sur Google Play
-          </a>
-        </div>
-      </section>
+    <section class="py-24 sm:py-32 border-t border-ink/10 text-center" aria-labelledby="commencer-la-visite">
+      <h2 id="commencer-la-visite" class="mb-4 font-serif text-5xl font-medium md:text-6xl italic text-gold">Commencer
+        la visite</h2>
+      <p class="mb-12 font-sans text-ink/70 text-lg">Installez Odyssée et explorez le Louvre à travers des récits conçus
+        pour le musée.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.anonymous.theartcompanion"
+        class="cta-primary inline-block px-12 py-5 font-sans font-bold text-paper rounded-xl"
+        data-play-store-link="true" rel="noopener">
+        Installer sur Google Play
+      </a>
+    </section>
+  </main>
 
-      <footer class="section" role="contentinfo">
-        <div class="meta-links">
-          <a href="https://theartcompanion-fecc6.web.app/privacy-policy.html" target="_blank" rel="noopener">
-            Politique de confidentialité
-          </a>
-          <a href="/fr/account-deletion/">Suppression de compte</a>
-          <a href="/sitemap.xml">Plan du site</a>
-          <a
-            href="mailto:thomas@tech4art.info"
-            data-contact-link="true"
-            data-contact-location="footer"
-            data-contact-type="email"
-          >
-            Contact
-          </a>
-        </div>
-      </footer>
-    </main>
+  <footer
+    class="mx-auto max-w-5xl px-6 py-12 border-t border-ink/10 font-sans text-sm font-medium tracking-widest uppercase text-ink/50"
+    role="contentinfo">
+    <div class="flex flex-wrap gap-8 justify-center sm:justify-start">
+      <a href="https://theartcompanion-fecc6.web.app/privacy-policy.html" target="_blank" rel="noopener"
+        class="hover:text-gold transition-colors">Politique de confidentialité</a>
+      <a href="/fr/account-deletion/" class="hover:text-gold transition-colors">Suppression de compte</a>
+      <a href="/sitemap.xml" class="hover:text-gold transition-colors">Plan du site</a>
+      <a href="mailto:thomas@tech4art.info" class="hover:text-gold transition-colors">Contact</a>
+    </div>
+  </footer>
 
-    <script src="/assets/site.js" defer></script>
-  </body>
+  <script src="../../assets/site.js" defer></script>
+</body>
+
 </html>
